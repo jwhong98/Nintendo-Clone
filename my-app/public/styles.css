@@ -1,0 +1,48 @@
+.gameImage{
+    size: 20em;
+}
+
+#gameLogo {
+    width: auto;
+    height: 35em;
+    background-color: #d6f0fa;
+    padding: 20px;
+    text-align: center;
+}
+
+#gameImage {
+    margin: auto;
+}
+
+.navi{
+    text-align: center;
+}
+
+header{
+    padding: 10px;
+}
+
+#logo {
+    width: 8em;
+ 
+}
+
+#screenShots {
+    width: auto;
+    height: 20em;
+    background-color: #d6f0fa;
+    padding: 20px;
+    text-align: center;
+}
+
+#ratingImage {
+    width: 60px;
+    position: relative;
+}
+
+.siteButton {
+
+}
+
+
+
