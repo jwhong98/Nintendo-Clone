@@ -40,9 +40,38 @@ header{
     position: relative;
 }
 
-.siteButton {
-
+#headerButton {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    
 }
+
+header {
+    position: relative;
+}
+
+.head {
+    padding: 10px;
+    border-bottom: 2px solid #efefef;
+}
+
+#details {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    padding: 70px;
+    height: 20em;
+    
+}
+
+#purchase {
+    position: absolute;
+    display:inline-block;
+    right: 0;
+    bottom: 5em;
+}
+
 
 
 
