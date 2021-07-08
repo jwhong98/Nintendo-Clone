@@ -3,7 +3,7 @@ import React from "react";
 const GameDetails = (props) => {
     return(
         <div id="details">
-            <p>{props.device}</p>
+            <p><span className="device">{props.device}</span></p>
             <h2>{props.title}</h2>
             <p>{props.availability}</p>
             <button>Add to Wish List</button>

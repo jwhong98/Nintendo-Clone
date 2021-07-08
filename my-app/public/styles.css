@@ -1,3 +1,8 @@
+body {
+    color: #484848;
+    font-family: museo-sans, Lato, sans-serif;
+}
+
 .gameImage{
     size: 20em;
 }
@@ -29,7 +34,7 @@ header{
 
 #screenShots {
     width: auto;
-    height: 20em;
+    height: 27em;
     background-color: #d6f0fa;
     padding: 20px;
     text-align: center;
@@ -71,7 +76,4 @@ header {
     right: 0;
     bottom: 5em;
 }
-
-
-
 
