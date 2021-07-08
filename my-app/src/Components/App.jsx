@@ -6,6 +6,7 @@ import ScreenShots from "./Screenshots";
 import Description from "./Description";
 import Games from "../Games";
 
+
 const createGameDetail = (game) => {
     return (
         <GameDetails 
@@ -25,6 +26,13 @@ const createDescription = (game) => {
             key={game.id}
             head={game.head}
             description={game.description}
+            date={game.date}
+            players={game.players}
+            genre={game.genre}
+            publisher={game.publisher}
+            developer={game.developer}
+            size={game.size}
+            languages={game.languages}
         />
     )
 }
