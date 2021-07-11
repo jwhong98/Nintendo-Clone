@@ -77,3 +77,39 @@ header {
     bottom: 5em;
 }
 
+.navButton {
+    margin: 5px;
+    padding: 3px;
+}
+
+button {
+    border: none;
+    background-color: white;
+}
+
+#buyButton {
+    background-color: #de0011;
+    border-color: #de0011;
+    border-radius: 6.5625px;
+    border-style: solid;
+    border-width: 1px;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+    padding: 1em;
+}
+
+#wishlistButton {
+    align-items: center;
+    color: #de0011;
+    display: flex;
+    line-height: 16px;
+    padding: 12px 16px;
+    text-align: center;
+}
+
+.device {
+    text-decoration: underline;
+    text-decoration-color: #de0011;
+}

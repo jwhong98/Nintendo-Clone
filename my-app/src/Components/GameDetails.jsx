@@ -6,11 +6,11 @@ const GameDetails = (props) => {
             <p><span className="device">{props.device}</span></p>
             <h2>{props.title}</h2>
             <p>{props.availability}</p>
-            <button>Add to Wish List</button>
+            <button id="wishlistButton">Add to Wish List</button>
 
             <div id="purchase">
                 <h2>{props.price}</h2>
-                <button className="btn btn-danger">Buy digital</button>
+                <button id="buyButton" className="btn ">Buy digital</button>
                 <p>Eligible for up to {props.points} points</p>
             </div>
         </div>
