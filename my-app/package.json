@@ -36,9 +36,13 @@
     ]
   },
   "devDependencies": {
+    "@iconify-icons/bx": "^1.1.0",
+    "@iconify-icons/ci": "^1.1.0",
+    "@iconify-icons/ic": "^1.1.7",
     "@iconify-icons/icomoon-free": "^1.1.0",
     "@iconify-icons/jam": "^1.1.0",
     "@iconify-icons/mdi": "^1.1.15",
+    "@iconify-icons/mi": "^1.1.1",
     "@iconify-icons/vaadin": "^1.1.0",
     "@iconify-icons/whh": "^1.1.0",
     "@iconify/react": "^1.1.4"

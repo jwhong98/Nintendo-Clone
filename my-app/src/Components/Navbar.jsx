@@ -1,4 +1,9 @@
 import React from "react";
+import { Icon, InlineIcon } from '@iconify/react';
+import nintendoSwitch from '@iconify-icons/mdi/nintendo-switch';
+import gamecursorIcon from '@iconify-icons/whh/gamecursor';
+import bxsChat from '@iconify-icons/bx/bxs-chat';
+import baselineStar from '@iconify-icons/ic/baseline-star';
 
 const gameToggle = () => {
     document.getElementById("gamesDropdown").classList.toggle("show");
@@ -25,10 +30,10 @@ const gameToggle = () => {
 const Navbar = () => {
     return( 
     <div className = "navi">   
-        <button type="button" onClick={gameToggle} className="dropbtn">Games</button>
-        <button type="button" onClick={hardwareToggle} className="dropbtn" >Hardware</button>
-        <button className="navButton">News & Events</button>
-        <button className="navButton">Play Nintendo</button>
+        <button type="button" onClick={gameToggle} className="dropbtn"><Icon icon={gamecursorIcon} />Games</button>
+        <button type="button" onClick={hardwareToggle} className="dropbtn"> <Icon icon={nintendoSwitch}/>Hardware</button>
+        <button className="navButton"><Icon icon={bxsChat} />News & Events</button>
+        <button className="navButton"><Icon icon={baselineStar} />Play Nintendo</button>
     </div>
     );
 }
