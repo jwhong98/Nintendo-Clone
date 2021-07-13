@@ -1,8 +1,11 @@
 import React from "react";
 import Navbar from "./Navbar";
+import GamesToggle from "./GamesToggle";
+import HardwareToggle from "./HardwareToggle";
  
 const Header = () => {
     return (
+        <React.Fragment>
         <header>
         <div className="head">
             {/* <img alt="Nintendo Logo" src="https://1000logos.net/wp-content/uploads/2021/04/Nintendo-logo.png" id="logo"></img> */}
@@ -16,6 +19,9 @@ const Header = () => {
         
             <Navbar/>
         </header>
+        <GamesToggle />
+        <HardwareToggle />
+        </React.Fragment>
         
     );
 }

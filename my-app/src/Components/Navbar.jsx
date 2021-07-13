@@ -1,26 +1,36 @@
 import React from "react";
 
+const gameToggle = () => {
+    document.getElementById("gamesDropdown").classList.toggle("show");
+  }
+
+  const hardwareToggle = () => {
+    document.getElementById("hardwareDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
 const Navbar = () => {
     return( 
-    
-    <div className = "navi">
-        <button type="button" className="navButton dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Games</button>
-        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a className="dropdown-item" href="#">Shop games</a></li>
-            <li><a className="dropdown-item" href="#">Sales and deals</a></li>
-            <li><a className="dropdown-item" href="#">Coming soon</a></li>
-            <li><a className="dropdown-item" href="#">Online service</a></li>
-            <li><a className="dropdown-item" href="#">Mobile games</a></li>
-        </ul>
-        <button type="button" className="navButton dropdown-toggle" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Hardware</button>
-        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-            <li><a className="dropdown-item" href="#">Nintendo Switch Lineup</a></li>
-            <li><a className="dropdown-item" href="#">Accessories</a></li>
-            <li><a className="dropdown-item" href="#">amiibo</a></li>
-        </ul>
+    <div className = "navi">   
+        <button type="button" onClick={gameToggle} className="dropbtn">Games</button>
+        <button type="button" onClick={hardwareToggle} className="dropbtn" >Hardware</button>
         <button className="navButton">News & Events</button>
         <button className="navButton">Play Nintendo</button>
-    </div>);
+    </div>
+    );
 }
 
 export default Navbar;
